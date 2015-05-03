@@ -1,0 +1,3 @@
+db_url: <%= ENV['DB_URL'] %>
+db_user: <%= ENV['DB_USER'] %>
+db_password: <%= ENV['DB_PASSWORD'] %>

@@ -1,0 +1,2 @@
+class ServiceException < StandardError
+end

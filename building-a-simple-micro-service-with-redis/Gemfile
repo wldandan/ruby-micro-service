@@ -8,3 +8,4 @@ gem 'rack-cors'
 
 gem 'redis'
 gem 'puma'
+gem 'dotenv'
