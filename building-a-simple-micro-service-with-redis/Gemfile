@@ -1,0 +1,10 @@
+#source 'https://rubygems.org'
+source 'http://ruby.taobao.org'
+
+gem 'grape'
+gem 'grape-entity'
+gem 'grape-swagger'
+gem 'rack-cors'
+
+gem 'redis'
+gem 'puma'
