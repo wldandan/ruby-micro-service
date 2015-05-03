@@ -11,11 +11,14 @@ class ProductRepository
 
     def create(name, price)
       id = records.insert(name: name, price: price)
+      raise ServiceException, 'Create Product failed' unless id
       Product.new(id, name, price)
     end
 
     def find(id)
-      records[:id => id]
+      product = records[:id => id]
+      raise ServiceException, 'Product not found' unless product
+      product
     end
 
     def update(id, name, price)

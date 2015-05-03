@@ -1,0 +1,15 @@
+# Logfile created on 2015-05-04 00:15:33 +0800 by logger.rb/44203
+I, [2015-05-04T00:15:33.379630 #82577]  INFO -- : 127.0.0.1 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Safari/537.36 GET /products/2
+I, [2015-05-04T00:15:34.614329 #82577]  INFO -- : 127.0.0.1 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Safari/537.36 GET /products/2
+I, [2015-05-04T00:15:48.364102 #82577]  INFO -- : 127.0.0.1 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Safari/537.36 GET /products/2
+I, [2015-05-04T00:15:48.995512 #82577]  INFO -- : 127.0.0.1 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Safari/537.36 GET /products/2
+I, [2015-05-04T00:17:17.635979 #82836]  INFO -- : 127.0.0.1 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Safari/537.36 GET /products/2
+E, [2015-05-04T00:17:17.667397 #82836] ERROR -- : Product not found
+I, [2015-05-04T00:17:18.337517 #82836]  INFO -- : 127.0.0.1 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Safari/537.36 GET /products/2
+E, [2015-05-04T00:17:18.338265 #82836] ERROR -- : Product not found
+I, [2015-05-04T00:17:18.851073 #82836]  INFO -- : 127.0.0.1 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Safari/537.36 GET /products/2
+E, [2015-05-04T00:17:18.852138 #82836] ERROR -- : Product not found
+I, [2015-05-04T00:17:34.808850 #82836]  INFO -- : 127.0.0.1 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Safari/537.36 GET /products/2
+E, [2015-05-04T00:17:34.809515 #82836] ERROR -- : Product not found
+I, [2015-05-04T00:17:37.515431 #82836]  INFO -- : 127.0.0.1 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Safari/537.36 GET /products/2
+E, [2015-05-04T00:17:37.516116 #82836] ERROR -- : Product not found

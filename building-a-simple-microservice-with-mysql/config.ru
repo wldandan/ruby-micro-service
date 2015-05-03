@@ -3,15 +3,13 @@ require 'grape-swagger'
 require 'grape-entity'
 require 'rack/cors'
 require 'dotenv'
+Dotenv.load
+
 require_relative 'app/models/products'
 require_relative 'app/models/product'
 require_relative 'app/representers/entities'
 require_relative 'app/api/products_api'
 require_relative 'app/api/diagnostic_api'
-
-Dotenv.load
-
-require 'byebug';byebug
 
 use Rack::Cors do
   allow do

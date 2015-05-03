@@ -7,6 +7,7 @@ class ProductsApi < Grape::API
   format :json
   default_format :json
 
+
   namespace :products do
 
     desc 'List of products', entity: Entities::Products

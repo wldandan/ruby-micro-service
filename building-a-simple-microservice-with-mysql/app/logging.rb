@@ -6,10 +6,12 @@ module Logging
     Logging.logger
   end
 
+  LOG_FILE = ENV['RACK_ENV'] == 'production' ? STDOUT : "log/#{ENV['RACK_ENV']}.log"
+
   class << self
     def logger
       @logger ||= begin
-        logger = test_env? ? Logger.new('/dev/null') : Logger.new(STDOUT)
+        logger = Logger.new(LOG_FILE)
         logger.level = Logger::DEBUG
         logger
       end

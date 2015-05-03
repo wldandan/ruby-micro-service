@@ -2,8 +2,18 @@ require 'json'
 require_relative '../../app/boot'
 
 class ProductsApi < Grape::API
+
   format :json
   default_format :json
+
+  rescue_from ServiceException do |error|
+    Logging::logger.error error.message
+    Rack::Response.new({ errors: error.message }.to_json, 404).finish
+  end
+
+  before do
+    Logging::logger.info "#{env['REMOTE_ADDR']} #{env['HTTP_USER_AGENT']} #{env['REQUEST_METHOD']} #{env['REQUEST_PATH']}"
+  end
 
   namespace :products, desc: 'Product operations' do
 
