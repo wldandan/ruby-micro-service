@@ -2,15 +2,14 @@ class Products
   attr_accessor :products
 
   def initialize
-    self.products = []
+    @products = []
   end
 
   def count
-    products.size
+    @products.size
   end
 
   def <<(product)
-    self.products << product
+    @products << product
   end
-
 end

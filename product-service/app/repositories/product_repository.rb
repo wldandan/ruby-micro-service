@@ -2,7 +2,6 @@ require 'sequel'
 
 class ProductRepository
   class << self
-
     def all
       records.each_with_object Products.new do |product, products|
         products << Product.new(product[:id], product[:name], product[:price].to_f)
@@ -16,7 +15,7 @@ class ProductRepository
     end
 
     def find(id)
-      product = records[:id => id]
+      product = records[id: id]
       raise ServiceException, 'Product not found' unless product
       product
     end
@@ -27,12 +26,10 @@ class ProductRepository
 
     def delete(id)
       records.where('id = ?', id).delete
-      rescue
-        false
-      true
     end
 
     private
+
     def records
       db[:products]
     end

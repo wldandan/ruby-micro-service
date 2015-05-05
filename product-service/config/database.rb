@@ -7,8 +7,6 @@ class Database
     @db ||= setup
   end
 
-  private
-
   def self.setup
     Sequel.connect(ServiceConfig.db_url, user: ServiceConfig.db_user, password: ServiceConfig.db_password)
   end

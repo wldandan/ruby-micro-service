@@ -18,6 +18,7 @@ end
 
 group :development, :test do
   gem 'byebug'
+  gem 'rspec'
   gem 'cane'
   gem 'rubocop'
 end
