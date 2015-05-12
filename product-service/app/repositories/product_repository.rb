@@ -3,15 +3,15 @@ require 'sequel'
 class ProductRepository
   class << self
     def all
-      records.each_with_object Products.new do |product, products|
-        products << Product.new(product[:id], product[:name], product[:price].to_f)
+      records.each_with_object([]) do |product, products|
+        products << Product.new(product)
       end
     end
 
-    def create(name, price)
-      id = records.insert(name: name, price: price)
+    def create(name, category, price)
+      id = records.insert(name: name, price: price, category: category, created_at: Time.now)
       raise ServiceException, 'Create Product failed' unless id
-      Product.new(id, name, price)
+      records[id: id]
     end
 
     def find(id)
@@ -21,7 +21,7 @@ class ProductRepository
     end
 
     def update(id, name, price)
-      records.where('id = ?', id).update(name: name, price: price)
+      records.where('id = ?', id).update(name: name, price: price, updated_at: Time.now)
     end
 
     def delete(id)

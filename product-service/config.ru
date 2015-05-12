@@ -5,7 +5,6 @@ require 'rack/cors'
 require 'dotenv'
 Dotenv.load
 
-require_relative 'app/models/products'
 require_relative 'app/models/product'
 require_relative 'app/representers/entities'
 require_relative 'app/api/products_api'
@@ -27,7 +26,7 @@ class API < Grape::API
   add_swagger_documentation api_version: 'v1', hide_documentation_path: true,
                             produces:[],
                             hide_format: true, format: 'json',
-                            models: [Entities::Product, Entities::Products]
+                            models: [Entities::Product]
 end
 
 # project_root = File.expand_path('../../', File.dirname(__FILE__))

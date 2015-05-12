@@ -26,18 +26,18 @@ namespace :db do
     Rake::Task['db:version'].execute
   end
 
-  # desc "Perform rollback to specified target or full rollback as default"
-  # task :rollback, :target do |t, args|
-  #   args.with_defaults(:target => 0)
-  #
-  #   Sequel::Migrator.run(DB, "db/migrations", :target => args[:target].to_i)
-  #   Rake::Task['db:version'].execute
-  # end
-  #
-  # desc "Perform migration reset (full rollback and migration)"
-  # task :reset do
-  #   Sequel::Migrator.run(DB, "db/migrations", :target => 0)
-  #   Sequel::Migrator.run(DB, "db/migrations")
-  #   Rake::Task['db:version'].execute
-  # end
+  desc "Perform rollback to specified target or full rollback as default"
+  task :rollback, :target do |t, args|
+    args.with_defaults(:target => 0)
+
+    Sequel::Migrator.run(instance, "db/migrations", :target => args[:target].to_i)
+    Rake::Task['db:version'].execute
+  end
+
+  desc "Perform migration reset (full rollback and migration)"
+  task :reset do
+    Sequel::Migrator.run(instance, "db/migrations", :target => 0)
+    Sequel::Migrator.run(instance, "db/migrations")
+    Rake::Task['db:version'].execute
+  end
 end

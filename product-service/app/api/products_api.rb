@@ -6,23 +6,28 @@ class ProductsApi < Grape::API
   default_format :json
 
   rescue_from ServiceException do |error|
-    logger.error error.message
+    Logging::logger.error error.message
     Rack::Response.new({ errors: error.message }.to_json, 404).finish
   end
 
   before do
-    logger.info "#{env['REMOTE_ADDR']} #{env['HTTP_USER_AGENT']} #{env['REQUEST_METHOD']} #{env['REQUEST_PATH']}"
+    Logging::logger.info "#{env['REMOTE_ADDR']} #{env['HTTP_USER_AGENT']} #{env['REQUEST_METHOD']} #{env['REQUEST_PATH']}"
   end
 
   namespace :products, desc: 'Product operations' do
-    desc 'List of products', entity: Entities::Products
-    get '/', http_codes: [[200, 'Ok', Entities::Products, is_array: true]] do
-      present ProductRepository.all, is_array: false, with: Entities::Products, type: :full
+    desc 'List of products', entity: Entities::Product
+    get '/', http_codes: [[200, 'Ok', Entities::Product, is_array: true]] do
+      present ProductRepository.all, with: Entities::Product, type: :full
     end
+
+    # get '/' do
+    #   present ProductRepository.all, with: Entities::Product
+    # end
+
 
     desc 'Adds a new products record.', entity: Entities::Product, params: Entities::Product.documentation.except(:id)
     post '/', http_codes: [ [ 201, 'Created', Entities::Product ] ] do
-      present ProductRepository.create(params[:name], params[:price])
+      present ProductRepository.create(params[:name], params[:category], params[:price])
     end
 
     desc 'Returns a products record for the specified id', entity: Entities::Product
