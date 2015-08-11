@@ -21,4 +21,5 @@ group :development, :test do
   gem 'rspec'
   gem 'cane'
   gem 'rubocop'
+  gem 'pact', '~> 1.9.0'
 end
