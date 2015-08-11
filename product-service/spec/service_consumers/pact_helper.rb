@@ -9,6 +9,6 @@ Pact.service_provider "Product Service" do
     # integration box, you would use a [Pact Broker](https://github.com/bethesque/pact_broker) or publish your pacts as artifacts,
     # and point the pact_uri to the pact published by the last successful build.
 
-    pact_uri '../consumer/specs/pacts/product_consumer-product_service.json'
+    pact_uri '../consumer/spec/pacts/product_consumer-product_service.json'
   end
 end
