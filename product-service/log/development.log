@@ -84,3 +84,16 @@ I, [2015-05-10T17:07:13.477955 #47235]  INFO -- : ::1 Mozilla/5.0 (Macintosh; In
 I, [2015-05-10T17:07:14.635961 #47235]  INFO -- : ::1 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Safari/537.36 POST /products
 I, [2015-05-11T23:16:06.832596 #47235]  INFO -- : ::1 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Safari/537.36 GET /products
 I, [2015-05-11T23:16:14.972367 #47235]  INFO -- : ::1 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.135 Safari/537.36 GET /products/1
+I, [2015-08-10T16:58:51.443449 #2862]  INFO -- : 127.0.0.1 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.130 Safari/537.36 GET /products
+I, [2015-08-10T16:59:21.547719 #2862]  INFO -- : 127.0.0.1 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.130 Safari/537.36 GET /products
+I, [2015-08-10T16:59:23.245962 #2862]  INFO -- : 127.0.0.1 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.130 Safari/537.36 GET /products
+I, [2015-08-10T17:00:11.775026 #2862]  INFO -- : 127.0.0.1 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.130 Safari/537.36 GET /products
+I, [2015-08-10T17:00:13.040542 #2862]  INFO -- : 127.0.0.1 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.130 Safari/537.36 GET /products
+I, [2015-08-10T17:03:10.342791 #2862]  INFO -- : 127.0.0.1 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.130 Safari/537.36 GET /products
+I, [2015-08-10T17:04:19.802195 #2862]  INFO -- : 127.0.0.1 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.130 Safari/537.36 POST /products
+I, [2015-08-10T17:04:25.364669 #2862]  INFO -- : 127.0.0.1 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.130 Safari/537.36 GET /products
+I, [2015-08-10T17:04:33.239378 #2862]  INFO -- : 127.0.0.1 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.130 Safari/537.36 POST /products
+I, [2015-08-10T17:04:35.115581 #2862]  INFO -- : 127.0.0.1 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.130 Safari/537.36 GET /products
+I, [2015-08-10T17:04:42.041439 #2862]  INFO -- : 127.0.0.1 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.130 Safari/537.36 GET /products/1
+I, [2015-08-10T17:40:53.363286 #2862]  INFO -- : 127.0.0.1 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.130 Safari/537.36 GET /products
+I, [2015-08-10T17:41:20.030037 #2862]  INFO -- : 127.0.0.1 Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.130 Safari/537.36 GET /products

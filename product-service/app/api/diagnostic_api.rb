@@ -94,8 +94,7 @@ class DiagnosticApi < Grape::API
               host: 'config-service-node-1.vpc-1.abc.com',
               success: true,
               duration: 0.004212312
-            }
-          ]
+            }          ]
         }
       end
     end

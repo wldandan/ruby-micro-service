@@ -1,0 +1,55 @@
+{
+  "consumer": {
+    "name": "Product Consumer"
+  },
+  "provider": {
+    "name": "Product Service"
+  },
+  "interactions": [
+    {
+      "description": "a request for all products",
+      "provider_state": "products exist",
+      "request": {
+        "method": "get",
+        "path": "/products"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "body": [
+          {
+            "name": "Docker In Action",
+            "price": 56.0
+          },
+          {
+            "name": "Agile Method",
+            "price": 46
+          }
+        ]
+      }
+    },
+    {
+      "description": "a request for a product",
+      "provider_state": "product with id 1 exist",
+      "request": {
+        "method": "get",
+        "path": "/products/1"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "body": {
+          "name": "Docker In Action",
+          "price": 56.0
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "pactSpecificationVersion": "1.0.0"
+  }
+}
