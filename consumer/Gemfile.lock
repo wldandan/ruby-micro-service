@@ -40,7 +40,7 @@ GEM
       rspec (>= 2.14)
       term-ansicolor (~> 1.0)
       thor
-    rack (1.6.4)
+    rack (2.2.3)
     rack-test (0.6.3)
       rack (>= 1.0)
     randexp (0.1.7)
